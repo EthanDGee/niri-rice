@@ -39,6 +39,7 @@ My personal [niri](https://github.com/niri-wm/niri) config. This section lists o
 - **`Mod+S`**: Toggle the control center.
 - **`Mod+Comma`**: Toggle the shell settings. Replaces stock `consume-window-into-column`, and `expel-window-from-column` on `Mod+Period` is commented out.
 - **`Alt+Tab`**: Window switcher.
+- **`Mod+V`**: Toggle the clipboard history panel.
 - **Volume and brightness keys**: Sent to the shell instead of `wpctl` and `brightnessctl`, so the on-screen display shows.
 
 #### Applications
@@ -131,6 +132,7 @@ The shell binds in `niri/config.kdl` call `noctalia msg`:
 - **`Mod+S`**: Toggle control center.
 - **`Mod+Comma`**: Toggle settings.
 - **`Alt+Tab`**: Open window switcher.
+- **`Mod+V`**: Toggle the clipboard history panel.
 
 #### Plugins
 
