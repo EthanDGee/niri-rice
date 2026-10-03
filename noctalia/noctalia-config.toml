@@ -1,0 +1,223 @@
+[bar.default]
+auto_hide = true
+background_opacity = 0.4999999888241291
+center = [ "clock", "weather", "github", "control-center" ]
+contact_shadow = true
+end = [ "media", "notifications", "group:g4", "group:g2", "session" ]
+margin_ends = 30
+reserve_space = false
+scale = 1.5000000149011612
+start = [ "launcher", "group:g1", "topgrade-wrapper", "clipboard", "group:g3" ]
+thickness = 61
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "network", "volume", "input_volume", "brightness", "bluetooth", "tray" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "tray", "wallhaven", "ambient-sounds", "keybinds", "ocr" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g3"
+    members = [ "nightlight", "caffeine" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g4"
+    members = [ "battery", "power_profile" ]
+    opacity = 1.0
+    padding = 6.0
+
+[calendar]
+enabled = true
+
+    [calendar.account.personal_google]
+    color = "primary"
+    type = "google"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = false
+    timeout = 300.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
+[location]
+auto_locate = true
+
+[lockscreen]
+blur_intensity = 0.24999999441206455
+transition_duration = 500
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 890.5
+    cy = 607.5
+    output = "eDP-1"
+    placement_height = 1187.0
+    placement_width = 1781.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+background_opacity = 0.79999998211860657
+scale = 0.7500000037252903
+
+[plugin_settings."kenn/keybind-cheatsheet"]
+compositor = "niri"
+show_actions = true
+
+[plugin_settings."liamwh/emoji-picker"]
+compact_position = "top_center"
+
+[plugin_settings."nightwatch75/topgrade-wrapper"]
+auto_check_hours = 24
+terminal = "ghostty"
+
+[plugins]
+auto_update = "none"
+enabled = [
+    "noctalia/wallhaven",
+    "fel/ocr",
+    "kenn/keybind-cheatsheet",
+    "shangshui0302/github-kanban",
+    "reaperhound/ambient-sounds",
+    "liamwh/emoji-picker",
+    "nightwatch75/topgrade-wrapper",
+    "thaer99ob/default-apps"
+]
+
+[shell]
+screen_time_enabled = true
+
+    [shell.panel]
+    clipboard_position = "top_right"
+    transparency_mode = "soft"
+
+[theme]
+builtin = "Tokyo-Night"
+wallpaper_scheme = "m3-rainbow"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "lazygit" ]
+
+[wallpaper.default]
+path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
+
+[wallpaper.last]
+path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
+
+[wallpaper.monitors.eDP-1]
+path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
+
+[widget.ambient-sounds]
+type = "reaperhound/ambient-sounds:ambient-sounds"
+
+[widget.battery]
+show_label = false
+
+[widget.brightness]
+show_label = false
+
+[widget.clock]
+scale = 0.90000000000000013
+
+[widget.control-center]
+scale = 0.90000000000000013
+
+[widget.github]
+scale = 0.90000000000000013
+type = "shangshui0302/github-kanban:github"
+
+[widget.keybinds]
+type = "kenn/keybind-cheatsheet:keybinds"
+
+[widget.media]
+enabled = false
+
+[widget.ocr]
+type = "fel/ocr:ocr"
+
+[widget.sysmon]
+label_show_units = false
+show_value = false
+
+[widget.topgrade-wrapper]
+glyph = "browser-check"
+type = "nightwatch75/topgrade-wrapper:topgrade-wrapper"
+
+[widget.tray]
+drawer = true
+enabled = false
+hide_passive = false
+pinned = [ "zapzap", "teams-for-linux" ]
+
+[widget.volume]
+show_label = false
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.weather]
+scale = 0.90000000000000013
