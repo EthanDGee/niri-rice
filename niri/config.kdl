@@ -272,33 +272,33 @@ debug {
 
 binds {
     // Core Noctalia binds
-    Mod+Ctrl+Return { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+Comma { spawn-sh "noctalia msg settings-toggle"; }
-    Alt+Tab { spawn-sh "noctalia msg window-switcher hold"; }
-    Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+Ctrl+Return hotkey-overlay-title="Open App Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+S hotkey-overlay-title="Toggle Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Comma hotkey-overlay-title="Toggle Noctalia Settings" { spawn-sh "noctalia msg settings-toggle"; }
+    Alt+Tab hotkey-overlay-title="Switch Windows" { spawn-sh "noctalia msg window-switcher hold"; }
+    Mod+V hotkey-overlay-title="Toggle Clipboard History" { spawn-sh "noctalia msg panel-toggle clipboard"; }
     // Niri has a built-in window switcher you might want to try it to see which one you prefer.
 
     
     // Plugins 
     // Text extraction from screenshots
-    Mod+Shift+S { spawn-sh "noctalia msg plugin fel/ocr:ocr all ocr-region"; } 
+    Mod+Shift+S hotkey-overlay-title="Plugin: OCR Screen Region" { spawn-sh "noctalia msg plugin fel/ocr:ocr all ocr-region"; }
 
     // shows a search-able list of key binds.
-    Mod+Shift+Slash { spawn-sh "noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"; }
+    Mod+Shift+Slash hotkey-overlay-title="Plugin: Show Keybind Cheatsheet" { spawn-sh "noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"; }
 
     // open an emoji picker
-    Mod+Shift+E {spawn-sh "noctalia msg panel-toggle liamwh/emoji-picker:wide"; }
+    Mod+Shift+E hotkey-overlay-title="Plugin: Open Emoji Picker" { spawn-sh "noctalia msg panel-toggle liamwh/emoji-picker:wide"; }
 
     // open calculator view
-    Mod+Shift+C { spawn-sh "noctalia msg panel-toggle yuuto/calculator:panel"; }
+    Mod+Shift+C hotkey-overlay-title="Plugin: Open Calculator" { spawn-sh "noctalia msg panel-toggle yuuto/calculator:panel"; }
 
     // Audio & Brightness
-    XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
-    XF86AudioLowerVolume { spawn-sh "noctalia msg volume-down"; }
-    XF86AudioMute { spawn-sh "noctalia msg volume-mute"; }
-    XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
-    XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
+    XF86AudioRaiseVolume hotkey-overlay-title="Volume Up" { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume hotkey-overlay-title="Volume Down" { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute hotkey-overlay-title="Mute Volume" { spawn-sh "noctalia msg volume-mute"; }
+    XF86MonBrightnessUp hotkey-overlay-title="Brightness Up" { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown hotkey-overlay-title="Brightness Down" { spawn-sh "noctalia msg brightness-down"; }
 
    
     // Applications
