@@ -13,6 +13,7 @@ thickness = 61
     [[bar.default.capsule_group]]
     accordion = true
     accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g2"
@@ -23,16 +24,18 @@ thickness = 61
     [[bar.default.capsule_group]]
     accordion = true
     accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g1"
-    members = [ "tray", "wallhaven", "ambient-sounds", "keybinds", "ocr" ]
+    members = [ "tray", "wallhaven", "bar", "ambient-sounds", "current", "keybinds", "ocr" ]
     opacity = 1.0
     padding = 6.0
 
     [[bar.default.capsule_group]]
     accordion = true
     accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g3"
@@ -43,6 +46,7 @@ thickness = 61
     [[bar.default.capsule_group]]
     accordion = true
     accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g4"
@@ -132,7 +136,7 @@ auto_check_hours = 24
 terminal = "ghostty"
 
 [plugins]
-auto_update = "none"
+auto_update = "all"
 enabled = [
     "noctalia/wallhaven",
     "fel/ocr",
@@ -141,7 +145,8 @@ enabled = [
     "reaperhound/ambient-sounds",
     "liamwh/emoji-picker",
     "nightwatch75/topgrade-wrapper",
-    "thaer99ob/default-apps"
+    "thaer99ob/default-apps",
+    "yuuto/calculator"
 ]
 
 [shell]
@@ -171,6 +176,9 @@ path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
 [widget.ambient-sounds]
 type = "reaperhound/ambient-sounds:ambient-sounds"
 
+[widget.bar]
+type = "yuuto/calculator:bar"
+
 [widget.battery]
 show_label = false
 
@@ -182,6 +190,9 @@ scale = 0.90000000000000013
 
 [widget.control-center]
 scale = 0.90000000000000013
+
+[widget.current]
+type = "thaer99ob/default-apps:current"
 
 [widget.github]
 scale = 0.90000000000000013
@@ -201,7 +212,7 @@ label_show_units = false
 show_value = false
 
 [widget.topgrade-wrapper]
-glyph = "browser-check"
+glyph = "settings-up"
 type = "nightwatch75/topgrade-wrapper:topgrade-wrapper"
 
 [widget.tray]

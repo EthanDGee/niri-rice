@@ -86,7 +86,7 @@ My [Noctalia](https://github.com/noctalia-dev/noctalia-shell) shell config back 
 
 Launcher, topgrade, clipboard, and two accordion groups.
 
-- **Plugins**:  wallhaven, ambient sounds, keybind cheatsheet, and OCR.
+- **Plugins**:  wallhaven, ambient sounds, emoji selector, calculator, keybind cheatsheet, default application setter,  and OCR.
 - **Long Term Use**: Nightlight and caffeine.
 
 #### Center
@@ -123,6 +123,7 @@ All eight plugins are enabled, with `auto_update` set to `none` so versions only
 - **[emoji-picker](https://github.com/noctalia-dev/community-plugins/tree/main/emoji-picker)**: search pop up for emoji and symbols. Uses  `Mod+Shift+E`
 - **[topgrade-wrapper](https://github.com/nightwatch75/community-plugins/tree/main/topgrade-wrapper)**: Shows pending/installs updates from many sources (e.g, tmux, aur, nvim)
 - **[default-apps](https://github.com/noctalia-dev/community-plugins/tree/main/default-apps)**: View and change default applications.
+- **[calculator](https://github.com/noctalia-dev/community-plugins/tree/main/calculator)**: simple calculator widget. Uses `Mode+Shift+C`
 
 ### Niri Keybinds
 
