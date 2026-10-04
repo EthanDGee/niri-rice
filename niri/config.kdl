@@ -296,7 +296,7 @@ binds {
     Mod+Shift+Slash { spawn-sh "noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"; }
 
     // open an emoji picker
-    Mod+Shift+E {spawn-sh "noctalia msg panel-toggle liamwh/emoji-picker:compact"; }
+    Mod+Shift+E {spawn-sh "noctalia msg panel-toggle liamwh/emoji-picker:wide"; }
 
     // Audio & Brightness
     XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }

@@ -127,9 +127,6 @@ scale = 0.7500000037252903
 compositor = "niri"
 show_actions = true
 
-[plugin_settings."liamwh/emoji-picker"]
-compact_position = "top_center"
-
 [plugin_settings."nightwatch75/topgrade-wrapper"]
 auto_check_hours = 24
 terminal = "ghostty"
