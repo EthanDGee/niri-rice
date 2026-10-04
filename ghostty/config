@@ -1,0 +1,57 @@
+# BEHAVIORS
+copy-on-select = clipboard   
+confirm-close-surface = false
+
+# UI/UX
+window-decoration = none
+
+font-family = "Hack Nerd Font"
+font-family = "Noto Color Emoji"
+
+background-opacity = 0.6
+background-blur = true
+
+# KEYBINDS
+
+# ignore pane/tab management bindings
+# tabs
+keybind = ctrl+shift+t=ignore
+keybind = ctrl+shift+w=ignore
+keybind = ctrl+tab=ignore
+keybind = ctrl+shift+tab=ignore
+keybind = ctrl+page_up=ignore
+keybind = ctrl+page_down=ignore
+keybind = ctrl+shift+arrow_left=ignore
+keybind = ctrl+shift+arrow_right=ignore
+keybind = alt+1=ignore
+keybind = alt+2=ignore
+keybind = alt+3=ignore
+keybind = alt+4=ignore
+keybind = alt+5=ignore
+keybind = alt+6=ignore
+keybind = alt+7=ignore
+keybind = alt+8=ignore
+keybind = alt+9=ignore
+keybind = alt+digit_1=ignore
+keybind = alt+digit_2=ignore
+keybind = alt+digit_3=ignore
+keybind = alt+digit_4=ignore
+keybind = alt+digit_5=ignore
+keybind = alt+digit_6=ignore
+keybind = alt+digit_7=ignore
+keybind = alt+digit_8=ignore
+
+# splits
+keybind = ctrl+shift+o=ignore
+keybind = ctrl+shift+e=ignore
+keybind = ctrl+shift+enter=ignore
+keybind = super+ctrl+[=ignore
+keybind = super+ctrl+]=ignore
+keybind = ctrl+alt+arrow_up=ignore
+keybind = ctrl+alt+arrow_down=ignore
+keybind = ctrl+alt+arrow_left=ignore
+keybind = ctrl+alt+arrow_right=ignore
+keybind = super+ctrl+shift+arrow_up=ignore
+keybind = super+ctrl+shift+arrow_down=ignore
+keybind = super+ctrl+shift+arrow_left=ignore
+keybind = super+ctrl+shift+arrow_right=ignore

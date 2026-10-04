@@ -171,6 +171,19 @@ Stock binds that are gone with no replacement. Binds that were only moved or rea
 | `Mod+Ctrl+Wheel` up/down | Move column to workspace below or above |
 | `Mod+Ctrl+Shift+Wheel` up/down | Move column left or right |
 
+## Applications
+
+### Ghostty (Default Terminal)
+
+My [Ghostty](https://ghostty.org) terminal config
+
+- **Copy on select**: Selected text is copied to the clipboard.
+- **Close confirmation**: Disabled, so closing a terminal never prompts.
+- **Window decoration**: None, since niri draws the window border.
+- **Fonts**: `Hack Nerd Font` with `Noto Color Emoji` to add emoji functionality.
+- **Transparency**: 0.6 background opacity with blur.
+- **Removed Pane and tab keybinds**: All default tab and split keybinds are set to `ignore` to prevent conflict with other programs.
+
 ## Miscellaneous
 
 - **Bluetooth**: Turned off at startup.
