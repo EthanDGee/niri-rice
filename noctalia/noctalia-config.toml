@@ -173,6 +173,9 @@ path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
 [wallpaper.monitors.eDP-1]
 path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
 
+[weather]
+unit = "imperial"
+
 [widget.ambient-sounds]
 type = "reaperhound/ambient-sounds:ambient-sounds"
 
