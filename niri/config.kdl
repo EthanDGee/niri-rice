@@ -258,14 +258,6 @@ window-rule {
     block-out-from "screen-capture"
 }
 
-// Floating Noctalia settings window.
-window-rule {
-  match app-id="dev.noctalia.Noctalia"
-  open-floating true
-  default-column-width { fixed 1080; }
-  default-window-height { fixed 920; }
-}
-
 // enable rounded corners for all windows.
 window-rule {
     draw-border-with-background false  
