@@ -89,7 +89,7 @@ transition_duration = 500
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -100,7 +100,7 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     box_height = 196.0
     box_width = 810.0
     cx = 890.5
-    cy = 607.5
+    cy = 451.5
     output = "eDP-1"
     placement_height = 1187.0
     placement_width = 1781.0
@@ -122,6 +122,20 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 80.0
+    box_width = 240.0
+    cx = 890.5
+    cy = 209.5
+    output = "eDP-1"
+    placement_height = 1187.0
+    placement_width = 1781.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        clock_style = "digital"
 
 [notification]
 background_opacity = 0.79999998211860657
@@ -157,21 +171,23 @@ screen_time_enabled = true
     transparency_mode = "soft"
 
 [theme]
-builtin = "Tokyo-Night"
-wallpaper_scheme = "m3-rainbow"
+builtin = "Gruvbox"
+community_palette = "Catppuccin Mocha Blue"
+source = "wallpaper"
+wallpaper_scheme = "vibrant"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
     community_ids = [ "lazygit" ]
 
 [wallpaper.default]
-path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
+path = "/home/goose/Pictures/wallhaven-1qod3w.jpg"
 
 [wallpaper.last]
-path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
+path = "/home/goose/Pictures/wallhaven-1qod3w.jpg"
 
 [wallpaper.monitors.eDP-1]
-path = "/home/goose/Pictures/wallhaven-nmmvvk.jpg"
+path = "/home/goose/Pictures/wallhaven-1qod3w.jpg"
 
 [weather]
 unit = "imperial"
