@@ -227,9 +227,9 @@ spawn-at-startup "swayidle" "-w" \
 // Turn Bluetooth off at startup.
 spawn-sh-at-startup "bluetoothctl power off"
 
+// skip help hints at start off 
 hotkey-overlay {
-    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // ask the clients to omit their client-side decorations if possible.
