@@ -180,14 +180,17 @@ wallpaper_scheme = "vibrant"
     builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
     community_ids = [ "brave-origin", "micro", "neovim", "vscode", "zed", "bat", "lazygit" ]
 
-[wallpaper.default]
-path = "/home/goose/Pictures/wallhaven-1qod3w.jpg"
+[wallpaper]
+directory = "/home/goose/Pictures/Wallpaper"
 
-[wallpaper.last]
-path = "/home/goose/Pictures/wallhaven-1qod3w.jpg"
+    [wallpaper.default]
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-x8ye3z.jpg"
 
-[wallpaper.monitors.eDP-1]
-path = "/home/goose/Pictures/wallhaven-1qod3w.jpg"
+    [wallpaper.last]
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-x8ye3z.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-x8ye3z.jpg"
 
 [weather]
 unit = "imperial"
