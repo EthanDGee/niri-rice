@@ -28,7 +28,7 @@ thickness = 61
     enabled = true
     fill = "surface_variant"
     id = "g1"
-    members = [ "tray", "wallhaven", "bar", "ambient-sounds", "current", "keybinds", "ocr" ]
+    members = [ "tray", "wallhaven", "bar", "widget", "ambient-sounds", "current", "keybinds", "ocr" ]
     opacity = 1.0
     padding = 6.0
 
@@ -178,7 +178,7 @@ wallpaper_scheme = "vibrant"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "lazygit" ]
+    community_ids = [ "brave-origin", "micro", "neovim", "vscode", "zed", "bat", "lazygit" ]
 
 [wallpaper.default]
 path = "/home/goose/Pictures/wallhaven-1qod3w.jpg"
@@ -248,3 +248,6 @@ type = "noctalia/wallhaven:wallhaven"
 
 [widget.weather]
 scale = 0.90000000000000013
+
+[widget.widget]
+type = "liamwh/emoji-picker:widget"
