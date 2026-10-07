@@ -295,6 +295,7 @@ binds {
     Alt+Tab hotkey-overlay-title="Switch Windows" { spawn-sh "noctalia msg window-switcher hold"; }
     Mod+V hotkey-overlay-title="Toggle Clipboard History" { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Mod+Shift+D hotkey-overlay-title="Toggle Dark/Light Mode" { spawn-sh "noctalia msg theme-mode-toggle"; }
+    Mod+Shift+W hotkey-overlay-title="Open Wallpaper Picker" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
     // Niri has a built-in window switcher you might want to try it to see which one you prefer.
 
     
