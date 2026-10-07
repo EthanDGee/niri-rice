@@ -1,6 +1,7 @@
 # BEHAVIORS
 copy-on-select = clipboard   
 confirm-close-surface = false
+desktop-notifications = false
 
 # UI/UX
 window-decoration = none
@@ -8,7 +9,7 @@ window-decoration = none
 font-family = "Hack Nerd Font"
 font-family = "Noto Color Emoji"
 
-background-opacity = 0.6
+background-opacity = 0.5
 background-blur = true
 
 # KEYBINDS
