@@ -7,7 +7,7 @@ end = [ "media", "notifications", "group:g4", "group:g2", "session" ]
 margin_ends = 30
 reserve_space = false
 scale = 1.5000000149011612
-start = [ "launcher", "group:g1", "topgrade-wrapper", "clipboard", "group:g3" ]
+start = [ "launcher", "group:g1", "topgrade-wrapper", "clipboard", "group:g3", "widget_2" ]
 thickness = 61
 
     [[bar.default.capsule_group]]
@@ -150,7 +150,7 @@ auto_check_hours = 24
 terminal = "ghostty"
 
 [plugins]
-auto_update = "all"
+auto_update = "none"
 enabled = [
     "noctalia/wallhaven",
     "fel/ocr",
@@ -166,6 +166,9 @@ enabled = [
 [shell]
 screen_time_enabled = true
 
+    [shell.launcher]
+    auto_paste = "off"
+
     [shell.panel]
     clipboard_position = "top_right"
     transparency_mode = "soft"
@@ -173,6 +176,7 @@ screen_time_enabled = true
 [theme]
 builtin = "Gruvbox"
 community_palette = "Catppuccin Mocha Blue"
+mode = "light"
 source = "wallpaper"
 wallpaper_scheme = "vibrant"
 
@@ -184,13 +188,13 @@ wallpaper_scheme = "vibrant"
 directory = "/home/goose/Pictures/Wallpaper"
 
     [wallpaper.default]
-    path = "/home/goose/Pictures/Wallpaper/wallhaven-x8ye3z.jpg"
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-po9p9e.jpg"
 
     [wallpaper.last]
-    path = "/home/goose/Pictures/Wallpaper/wallhaven-x8ye3z.jpg"
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-po9p9e.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/goose/Pictures/Wallpaper/wallhaven-x8ye3z.jpg"
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-po9p9e.jpg"
 
 [weather]
 unit = "imperial"
@@ -254,3 +258,6 @@ scale = 0.90000000000000013
 
 [widget.widget]
 type = "liamwh/emoji-picker:widget"
+
+[widget.widget_2]
+type = "oldirtty/color_picker:widget"
