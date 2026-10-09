@@ -214,11 +214,11 @@ layout {
 spawn-at-startup "noctalia"
 
 spawn-at-startup "swayidle" "-w" \
-    "timeout" "60" "brightnessctl -s set 1%" \
+    "timeout" "180" "brightnessctl -s set 1%" \
     "resume" "brightnessctl -r" \
-    "timeout" "180" "niri msg action power-off-monitors" \
+    "timeout" "300" "niri msg action power-off-monitors" \
     "resume" "niri msg action power-on-monitors" \
-    "timeout" "300" "noctalia msg session lock" \
+    "timeout" "420" "noctalia msg session lock" \
     "before-sleep" "noctalia msg session lock"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
@@ -295,7 +295,7 @@ binds {
     Alt+Tab hotkey-overlay-title="Switch Windows" { spawn-sh "noctalia msg window-switcher hold"; }
     Mod+V hotkey-overlay-title="Toggle Clipboard History" { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Mod+Shift+D hotkey-overlay-title="Toggle Dark/Light Mode" { spawn-sh "noctalia msg theme-mode-toggle"; }
-    Mod+Shift+W hotkey-overlay-title="Open Wallpaper Picker" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
+    Mod+Shift+W hotkey-overlay-title="Toggle Wallpaper Picker" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
     // Niri has a built-in window switcher you might want to try it to see which one you prefer.
 
     
