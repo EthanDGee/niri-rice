@@ -293,12 +293,14 @@ binds {
     Mod+S hotkey-overlay-title="Toggle Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Comma hotkey-overlay-title="Toggle Noctalia Settings" { spawn-sh "noctalia msg settings-toggle"; }
     Alt+Tab hotkey-overlay-title="Switch Windows" { spawn-sh "noctalia msg window-switcher hold"; }
+
+
+    // Other Noctalia bindings
     Mod+V hotkey-overlay-title="Toggle Clipboard History" { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Mod+Shift+D hotkey-overlay-title="Toggle Dark/Light Mode" { spawn-sh "noctalia msg theme-mode-toggle"; }
     Mod+Shift+W hotkey-overlay-title="Toggle Wallpaper Picker" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-    // Niri has a built-in window switcher you might want to try it to see which one you prefer.
+    Mod+Shift+P hotkey-overlay-title="Open Control Center System Tab" { spawn-sh "noctalia msg panel-toggle control-center system"; }
 
-    
     // Plugins 
     // Text extraction from screenshots
     Mod+Shift+S hotkey-overlay-title="Plugin: OCR Screen Region" { spawn-sh "noctalia msg plugin fel/ocr:ocr all ocr-region"; }
@@ -549,9 +551,6 @@ binds {
     Mod+Ctrl+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
 
-    // Powers off the monitors. To turn them back on, do any input like
-    // moving the mouse or pressing any other key.
-    Mod+Shift+P { power-off-monitors; }
 }
 
 include "noctalia.kdl"
