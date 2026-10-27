@@ -300,6 +300,7 @@ binds {
     Mod+Shift+D hotkey-overlay-title="Toggle Dark/Light Mode" { spawn-sh "noctalia msg theme-mode-toggle"; }
     Mod+Shift+W hotkey-overlay-title="Toggle Wallpaper Picker" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
     Mod+Shift+P hotkey-overlay-title="Open Control Center System Tab" { spawn-sh "noctalia msg panel-toggle control-center system"; }
+    Mod+P hotkey-overlay-title="Cycle Performance Mode" { spawn-sh "noctalia msg power-cycle"; }
 
     // Plugins 
     // Text extraction from screenshots
