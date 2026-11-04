@@ -4,6 +4,8 @@ confirm-close-surface = false
 desktop-notifications = false
 
 # UI/UX
+theme = noctalia
+
 window-decoration = none
 
 font-family = "Hack Nerd Font"
