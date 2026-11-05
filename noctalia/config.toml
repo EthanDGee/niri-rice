@@ -56,6 +56,7 @@ thickness = 61
 
 [calendar]
 enabled = true
+event_time_format = "%-I:%M %P"
 
     [calendar.account.personal_google]
     color = "primary"
@@ -66,17 +67,17 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
     [idle.behavior.lock]
     action = "lock"
-    enabled = false
+    enabled = true
     timeout = 300.0
 
     [idle.behavior.lock-and-suspend]
     action = "lock_and_suspend"
-    enabled = false
+    enabled = true
     timeout = 900.0
 
     [idle.behavior.screen-off]
     action = "screen_off"
-    enabled = false
+    enabled = true
     timeout = 660.0
 
 [location]
@@ -228,6 +229,7 @@ enabled = [
 
 [shell]
 screen_time_enabled = true
+time_format = "{:%-I:%M %p}   "
 
     [shell.launcher]
     auto_paste = "off"
@@ -275,12 +277,15 @@ type = "reaperhound/ambient-sounds:ambient-sounds"
 type = "yuuto/calculator:bar"
 
 [widget.battery]
+display_mode = "glyph"
+scale = 1.0
 show_label = false
 
 [widget.brightness]
 show_label = false
 
 [widget.clock]
+format = "{:%-I:%M %P}"
 scale = 0.90000000000000013
 
 [widget.control-center]
