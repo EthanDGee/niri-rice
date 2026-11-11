@@ -282,6 +282,24 @@ window-rule {
     }
 }
 
+window-rule {
+    match app-id="^mpv$"
+    
+    // Force the video player to float above your Neovim workspace
+    open-floating true
+    
+    // Set a compact 16:9 Picture-in-Picture size
+    default-column-width { fixed 720; }
+    default-window-height { fixed 520; }
+
+    
+    // Pin to the top right corner (adjust x and y for padding)
+    default-floating-position x=24 y=24 relative-to="top-right"
+    
+    // Disable drop shadows for a flatter integration with Noctalia's shell
+    shadow { off; }
+}
+
 // Allow notification actions and window activation from Noctalia.
 debug {
   honor-xdg-activation-with-invalid-serial
