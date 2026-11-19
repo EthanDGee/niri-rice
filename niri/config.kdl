@@ -297,7 +297,7 @@ window-rule {
     default-floating-position x=24 y=24 relative-to="top-right"
     
     // Disable drop shadows for a flatter integration with Noctalia's shell
-    shadow { off; }
+    shadow { on; }
 }
 
 // Allow notification actions and window activation from Noctalia.
