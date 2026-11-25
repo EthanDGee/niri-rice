@@ -44,7 +44,7 @@ thickness = 61
     padding = 6.0
 
     [[bar.default.capsule_group]]
-    accordion = true
+    accordion = false
     accordion_direction = "end"
     border_width = 1.0
     enabled = true
@@ -88,9 +88,14 @@ blur_intensity = 0.24999999441206455
 transition_duration = 500
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@DP-4" ]
+widget_order = [
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-login-box@HDMI-A-2",
+    "lockscreen-login-box@DP-4"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -249,13 +254,13 @@ wallpaper_scheme = "vibrant"
 directory = "/home/goose/Pictures/Wallpaper"
 
     [wallpaper.default]
-    path = "/home/goose/Pictures/Wallpaper/wallhaven-6lpmkl.jpg"
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-1qod3w.jpg"
 
     [wallpaper.last]
-    path = "/home/goose/Pictures/Wallpaper/wallhaven-6lpmkl.jpg"
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-1qod3w.jpg"
 
     [wallpaper.monitors.DP-4]
-    path = "/home/goose/Pictures/Wallpaper/wallhaven-6lpmkl.jpg"
+    path = "/home/goose/Pictures/Wallpaper/wallhaven-x8ye3z.jpg"
 
     [wallpaper.monitors.HDMI-A-2]
     path = "/home/goose/Pictures/Wallpaper/wallhaven-k7rod6.png"
