@@ -62,7 +62,7 @@ My personal [niri](https://github.com/niri-wm/niri) config. This section lists o
 - **`Mod+M`**: Maximize the column. Swapped with stock, where `Mod+F` does this.
 - **`Mod+F`**: Maximize the window to the screen edges. Swapped with stock, where `Mod+M` does this.
 - **`Mod+T`**: Toggle floating for the window. Moved from stock `Mod+V`.
-- **`Mod+Shift+T`**: Switch focus between floating and tiling. Moved from stock `Mod+Shift+V`.
+- **`Mod+Ctrl+T`**: Switch focus between floating and tiling. Moved from stock `Mod+Shift+V`.
 - **`Mod+Ctrl+Shift+E`**: Quit niri. Moved from stock `Mod+Shift+E`. The confirmation dialog stays.
 
 ## Noctalia
@@ -116,7 +116,7 @@ Notifications, the session menu, two accordion groups, then power.
 All eight plugins are enabled, with `auto_update` set to `none` so versions only change when I update them by hand. Plugins with a niri keybind note it below.
 
 - **[wallhaven](https://github.com/noctalia-dev/official-plugins/tree/main/wallhaven)**: Sets wall paper using wall papers from wall haven.
-- **[ocr](https://github.com/Fel-2/community-plugins/tree/main/ocr)**: Uses OCR to extract text from screen selection and copies it to clipboard. Uses  `Mod+Shift+S`.
+- **[ocr](https://github.com/Fel-2/community-plugins/tree/main/ocr)**: Uses OCR to extract text from screen selection and copies it to clipboard. Uses `Mod+Shift+T`.
 - **[keybind-cheatsheet](https://github.com/noctalia-dev/community-plugins/tree/main/keybind-cheatsheet)**: A searchable panel of active shortcuts. Opened by `Mod+Shift+Slash`
 - **[github-kanban](https://github.com/noctalia-dev/community-plugins/tree/main/github-kanban)**: GitHub dashboard covering notifications, pull requests, issues, repositories, and recent Actions runs.
 - **[ambient-sounds](https://github.com/noctalia-dev/community-plugins/tree/main/ambient-sounds)**: A background player for white noise.
@@ -139,7 +139,8 @@ The shell binds in `niri/config.kdl` call `noctalia msg`:
 
 These binds call shell plugins.
 
-- **`Mod+Shift+S`**: Extract text from a screenshot region (OCR).
+- **`Mod+Shift+S`**: Screenshot a selected region.
+- **`Mod+Shift+T`**: Extract text from a screenshot region (OCR).
 - **`Mod+Shift+Slash`**: Searchable list of keybinds. Replaces the stock hotkey overlay bind.
 - **`Mod+Shift+E`**: Emoji picker.
 

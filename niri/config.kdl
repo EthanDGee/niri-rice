@@ -323,7 +323,7 @@ binds {
 
     // Plugins 
     // Text extraction from screenshots
-    Mod+Shift+S hotkey-overlay-title="Plugin: OCR Screen Region" { spawn-sh "noctalia msg plugin fel/ocr:ocr all ocr-region"; }
+    Mod+Shift+T hotkey-overlay-title="Plugin: OCR Screen Region" { spawn-sh "noctalia msg plugin fel/ocr:ocr all ocr-region"; }
 
     // shows a search-able list of key binds.
     Mod+Shift+Slash hotkey-overlay-title="Plugin: Show Keybind Cheatsheet" { spawn-sh "noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"; }
@@ -538,7 +538,7 @@ binds {
 
     // Move the focused window between the floating and the tiling layout.
     Mod+T       { toggle-window-floating; }
-    Mod+Shift+T { switch-focus-between-floating-and-tiling; }
+    Mod+Ctrl+T { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
@@ -554,6 +554,7 @@ binds {
     // Mod+Shift+Space { switch-layout "prev"; }
 
     Print { screenshot; }
+    Mod+Shift+S { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
